@@ -11,7 +11,7 @@ public class ThoiGian {
 
 
 	public ThoiGian(int ngay, int thang, int nam) throws InvalidDateException {
-		if(ngay <0 ||ngay > 31 || thang <0 ||thang >12)
+		if(ngay< 0 || thang<0 ||nam<0||ngay >31 || thang>12)
 		throw new InvalidDateException("Ngay thang khong hop le!");
 		else {
 		this.ngay = ngay;
